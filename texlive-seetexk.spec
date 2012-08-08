@@ -1,12 +1,12 @@
-# revision 23089
+# revision 26689
 # category TLCore
 # catalog-ctan /dviware/dvibook
-# catalog-date 2010-02-11 10:38:42 +0100
+# catalog-date 2012-04-10 15:00:16 +0200
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-seetexk
-Version:	20100211
-Release:	2
+Version:	20120410
+Release:	1
 Summary:	Utilities for manipulating DVI files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvibook
