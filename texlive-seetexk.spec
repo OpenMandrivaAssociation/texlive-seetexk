@@ -1,4 +1,4 @@
-# revision 26689
+# revision 29764
 # category TLCore
 # catalog-ctan /dviware/dvibook
 # catalog-date 2012-04-10 15:00:16 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-seetexk
 Version:	20120410
-Release:	1
+Release:	2
 Summary:	Utilities for manipulating DVI files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvibook
@@ -40,13 +40,13 @@ DOS version of dvibook is also provided.
 #-----------------------------------------------------------------------
 %files
 %{_mandir}/man1/dvibook.1*
-%{_texmfdir}/doc/man/man1/dvibook.man1.pdf
+%{_texmfdistdir}/doc/man/man1/dvibook.man1.pdf
 %{_mandir}/man1/dviconcat.1*
-%{_texmfdir}/doc/man/man1/dviconcat.man1.pdf
+%{_texmfdistdir}/doc/man/man1/dviconcat.man1.pdf
 %{_mandir}/man1/dviselect.1*
-%{_texmfdir}/doc/man/man1/dviselect.man1.pdf
+%{_texmfdistdir}/doc/man/man1/dviselect.man1.pdf
 %{_mandir}/man1/dvitodvi.1*
-%{_texmfdir}/doc/man/man1/dvitodvi.man1.pdf
+%{_texmfdistdir}/doc/man/man1/dvitodvi.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,24 +56,6 @@ DOS version of dvibook is also provided.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120410-1
-+ Revision: 812839
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100211-2
-+ Revision: 755893
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100211-1
-+ Revision: 719500
-- texlive-seetexk
-- texlive-seetexk
-- texlive-seetexk
-- texlive-seetexk
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
