@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-seetexk
 Version:	20120410
-Release:	3
+Release:	4
 Summary:	Utilities for manipulating DVI files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvibook
