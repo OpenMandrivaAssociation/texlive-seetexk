@@ -5,7 +5,7 @@
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-seetexk
-Version:	20170504
+Version:	20180331
 Release:	1
 Summary:	Utilities for manipulating DVI files
 Group:		Publishing
