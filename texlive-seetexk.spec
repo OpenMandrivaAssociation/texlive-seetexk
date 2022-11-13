@@ -1,18 +1,12 @@
-# revision 33818
-# category TLCore
-# catalog-ctan /dviware/dvibook
-# catalog-date 2014-02-26 23:03:13 +0100
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-seetexk
-Version:	20180331
-Release:	2
+Version:	57972
+Release:	1
 Summary:	Utilities for manipulating DVI files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvibook
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seetexk.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seetexk.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seetexk.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seetexk.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -42,7 +36,7 @@ DOS version of dvibook is also provided.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
