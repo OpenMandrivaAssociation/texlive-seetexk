@@ -3,7 +3,7 @@ Version:	57972
 Release:	2
 Summary:	Utilities for manipulating DVI files
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/dviware/dvibook
+URL:		https://www.ctan.org/tex-archive/dviware/dvibook
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seetexk.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seetexk.doc.r%{version}.tar.xz
